@@ -5,20 +5,20 @@ Tissue-specific characterization of DNA methylation (DNAm) is needed to understa
 # 2. Contents
 
 ## QTL_mapping_single_tissue
-Includes primary QTL detection using FastQTL(v.2.184). The adaptation of FastQTL is available at https://github.com/broadinstitute/gtex-pipeline/tree/master/qtl. Scripts for conditional QTL mapping are available at https://github.com/funpopgen/multiple_eqtl_mapping.
+Includes code for primary QTL detection using FastQTL(v.2.184). The adaptation of FastQTL is available at https://github.com/broadinstitute/gtex-pipeline/tree/master/qtl. Scripts for conditional QTL mapping are available at https://github.com/funpopgen/multiple_eqtl_mapping.
 
 ## QTL_mapping_cross_tissue
-Includes cross-tissue QTL analysis by leveraging QTL signal across tissues with mashr. mashr is available at https://github.com/stephenslab/mashr.  
+Includes code for cross-tissue QTL mapping by leveraging QTL signal across tissues with mashr. mashr is available at https://github.com/stephenslab/mashr.  
 
 ## TORUS_enrichment
-Includes QTL-annotation enrichment analysis using coloc and fastenloc. torus is available at https://github.com/xqwen/torus.
+Includes code for QTL-annotation enrichment analysis using torus. torus is available at https://github.com/xqwen/torus.
 
 ## eQTM_mapping_single_tissue
 Includes code for eQTM detection.
 
 ## eQTM_mapping_cross_tissue
-Includes cross-tissue eQTM analysis by leveraging eQTM signal across tissues with mashr. mashr is available at https://github.com/stephenslab/mashr.
+Includes code for cross-tissue eQTM mapping by leveraging eQTM signal across tissues with mashr. mashr is available at https://github.com/stephenslab/mashr.
 
 ## GWAS_QTL_colocalization
-Includes QTL-GWAS colocalization analysis using coloc and fastenloc. fastenloc is available at https://github.com/xqwen/fastenloc. coloc is available at https://github.com/chr1swallace/coloc/.
+Includes code for QTL-GWAS colocalization analysis using coloc and fastenloc. fastenloc is available at https://github.com/xqwen/fastenloc. coloc is available at https://github.com/chr1swallace/coloc/.
 
