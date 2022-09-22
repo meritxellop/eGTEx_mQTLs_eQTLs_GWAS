@@ -1,0 +1,2 @@
+Code in main.generate.all_mQTL.files.sh is meant to generate primary and conditional cis-mQTLs. Tune it in agreement with your dataset characteristics.
+Code in main.generate.all_eQTL.files.sh is meant to generate primary and conditional cis-eQTLs. Tune it in agreement with your dataset characteristics.
