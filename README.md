@@ -4,6 +4,9 @@ Tissue-specific characterization of DNA methylation (DNAm) is needed to understa
 
 # 2. Contents
 
+## DNAm_processing
+Includes code for DNAm processing with ChAMP(v.2.8.6) and minfi(1.36.0), available at Bioconductor https://www.bioconductor.org/.  
+
 ## QTL_mapping_single_tissue
 Includes code for primary QTL detection using FastQTL(v.2.184). The adaptation of FastQTL is available at https://github.com/broadinstitute/gtex-pipeline/tree/master/qtl. Scripts for conditional QTL mapping are available at https://github.com/funpopgen/multiple_eqtl_mapping.
 
