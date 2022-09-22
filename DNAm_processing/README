@@ -1,0 +1,18 @@
+The .idat files folder (e.g. G:/Projects/GTEx/GTEX_EPIC_Meth_Data) needs to contain:
+- all .idat files
+- experimental sheet – MethylationEPIC_GTEX_Batch01_11_SampleSheet.csv
+	-contains all information related to sample ID, plate, slide, position, etc. 
+	-needs to be in this folder if want to read in .idat files. 
+- .idat files for this project can be found at  AnVIL V9 release bucket corresponding to phs000424.v9. Users with access granted to GTEx dbGaP releases (phs000424.v8) have access to this AnVIL bucket. 
+
+Annotation file for EPIC array (B4 version): MethylationEPIC_v-1-0_B4.csv. Available online from Illumina, too big to be included in the github repo.
+
+Preprocessing code – GTEX methylation preprocessing 2-6-2021.R 
+	-code that was used to preprocess DNAm data (annotated). 
+-contains all steps related to loading, probe and sample removal, correction and normalization, and tissue subsetting. 
+
+Probe removal files (downloaded from Pidsley et al 2016):
+	-snp_cpg_pidsley.csv: SNPs within CpG. 
+	-snp_sbe_pidsley.csv: SNPs with single base pair extension.
+	-crossreactives_pidsley.csv: crossreactive CpGs. 
+-website: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1066-1)
