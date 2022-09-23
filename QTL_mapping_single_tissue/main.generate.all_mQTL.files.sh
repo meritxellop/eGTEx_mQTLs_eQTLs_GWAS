@@ -10,7 +10,15 @@ bash scripts/split.beds.sh
 # Generate primary signal mQTL block files
 for tissue in $(cat data/support_files/tissues.txt); do if [[ $tissue =~ .*_.* ]] ; then tissue=$(echo $tissue | sed 's/_//g'); fi; for id in $(cat coloc/data/fileids.txt); do echo $id; bash scripts/nominal.mQTL.fastqtl.peers.split.cmd $tissue $id regular;done;done
 
+# Generate permuted signal mQTL block files
+for tissue in $(cat data/support_files/tissues.txt); do if [[ $tissue =~ .*_.* ]] ; then tissue=$(echo $tissue | sed 's/_//g'); fi; for id in $(cat coloc/data/fileids.txt); do echo $id; bash scripts/permuted.mQTL.fastqtl.peers.split.cmd $tissue $id 5 regular;done;done
+
+# Perform multiple testing correction
+for tissue in $(cat data/support_files/tissues.txt); do ./calculate.qvalues.R -d $PERMDIR -t $tissue;done
+
 # Generate conditional signal mQTL block files
 for tissue in $(cat data/support_files/tissues.txt); do if [[ $tissue =~ .*_.* ]] ; then tissue=$(echo $tissue | sed 's/_//g'); fi; for id in $(cat coloc/data/fileids.txt); do echo $id; bash scripts/nominal.conditional.mQTL.fastqtl.peers.split.calls.all_mQTLs.cmd $tissue $id;done;done
 
 for tissue in $(cat data/support_files/tissues.txt); do if [[ $tissue =~ .*_.* ]] ; then tissue=$(echo $tissue | sed 's/_//g'); fi; > /scratch/mpavia/fastQTL/results/$tissue/mqtls/NonPermutedResults/tmpFiles/$tissue.bwd.all_mQTLs.ALL_cpgs.txt; for id in $(cat coloc/data/fileids.txt); do echo $id; cat /scratch/mpavia/fastQTL/results/$tissue/mqtls/NonPermutedResults/tmpFiles/$tissue.$id.bwd.all_mQTLs.ALL_cpgs.txt >> /scratch/mpavia/fastQTL/results/$tissue/mqtls/NonPermutedResults/tmpFiles/$tissue.bwd.all_mQTLs.ALL_cpgs.txt; done;done
+
+

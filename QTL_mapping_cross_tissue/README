@@ -1,0 +1,2 @@
+Code in main.mash.mQTLs.sh is meant to generate cross-tissue mash output from single-tissue cis-mQTLs. Tune it in agreement with your dataset characteristics.
+Code in main.mash.eQTLs.sh is meant to generate cross-tissue mash output from single-tissue cis-eQTLs. Tune it in agreement with your dataset characteristics.
