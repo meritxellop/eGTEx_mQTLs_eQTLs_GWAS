@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/539703495.svg)](https://zenodo.org/badge/latestdoi/539703495)
 # 1. Introduction
 Tissue-specific characterization of DNA methylation (DNAm) is needed to understand its role in gene regulation and its relevance to complex traits. We generated array-based DNAm profiles for 987 human samples from the Genotype-Tissue Expression (GTEx) project, representing 9 tissue types and 424 subjects. We characterized methylome and transcriptome correlations (eQTMs), genetic regulation in cis (mQTLs and eQTLs) across tissues, and e/mQTLs links to complex traits. With this DNAm-focused integrative analysis, we contribute to the understanding of molecular regulatory mechanisms in human tissues and their impact on complex traits.
 
