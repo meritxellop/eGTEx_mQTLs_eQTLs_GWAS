@@ -16,11 +16,8 @@ Includes code for cross-tissue QTL mapping by leveraging QTL signal across tissu
 ## TORUS_enrichment
 Includes code for QTL-annotation enrichment analysis using torus. torus is available at https://github.com/xqwen/torus.
 
-## eQTM_mapping_single_tissue
-Includes code for eQTM mapping.
-
-## eQTM_mapping_cross_tissue
-Includes code for cross-tissue eQTM mapping by leveraging eQTM signal across tissues with mashr. mashr is available at https://github.com/stephenslab/mashr.
+## eQTM_mapping_single_and_cross_tissue
+Includes code for single-tissue and cross-tissue eQTM mapping by leveraging eQTM signal across tissues with mashr. mashr is available at https://github.com/stephenslab/mashr.
 
 ## GWAS_QTL_colocalization
 Includes code for QTL-GWAS colocalization analysis using coloc, fastenloc and hyprcoloc. fastenloc is available at https://github.com/xqwen/fastenloc. coloc is available at https://github.com/chr1swallace/coloc/. hyprcoloc is available at https://github.com/jrs95/hyprcoloc.
