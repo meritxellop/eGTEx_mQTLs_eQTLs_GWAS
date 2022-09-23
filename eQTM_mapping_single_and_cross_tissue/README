@@ -1,0 +1,1 @@
+Code in main.sh is meant to generate a) single-tissue cis-eQTMs followed by b) cross-tissue mash output from single-tissue cis-eQTMs. Tune it in agreement with your dataset characteristics.
