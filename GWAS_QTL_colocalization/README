@@ -1,0 +1,2 @@
+Code in main.sh is meant to generate pairwise QTL-GWAS colocalization results from cis-QTLs. Tune it in agreement with your dataset characteristics.
+Code in main.HyPrColoc.sh is meant to generate multiwise QTL-GWAS colocalization results from cis-QTLs. Tune it in agreement with your dataset characteristics.

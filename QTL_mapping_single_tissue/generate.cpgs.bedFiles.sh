@@ -1,0 +1,4 @@
+cut -d' ' -f 3 ../results/permuted/Lung.regular.perm.fdr.rsid.txt | sort > tmp/sorted.cpgs.txt
+for id in $(cat data/fileids.txt); do echo $id; grep -w -F -f <(join -1 1 -2 1 <(sort ../data/support_files/lists/cpgs_by_fileid/$id.cpgs.txt) tmp/sorted.cpgs.txt) data/MethylationEPIC_v-1-0_B4.filtered.hg38.bed | awk -v id=$id '{print $0,id}' | tr ' ' '\t' |  awk '{if ($2-500000 > 0) {print $1,$2-500000,$3+500000,$4,$5} else {print $1,1,$3+500000,$4,$5}}' | tr ' ' '\t' >> data/MethylationEPIC_v-1-0_B4.filtered.hg38.mQTLregions.bed; done
+
+for tissue in $(cat data/tissues.txt | sed 's/_//g'); do echo $tissue; grep -F -w -f <(awk '{if($9<0.05) {print}}' ../results/permuted/$tissue.regular.perm.fdr.rsid.txt | cut -d ' ' -f 3) data/MethylationEPIC_v-1-0_B4.filtered.hg38.mQTLregions.bed > /scratch/mpavia/fastQTL/results/$tissue/mqtls/NonPermutedResults/tmpFiles/$tissue.regular.bed;done
